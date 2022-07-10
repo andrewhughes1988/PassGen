@@ -8,7 +8,7 @@ namespace PassGen
 {
     internal class Generator
     {
-        public static string Generate(int length) 
+        public static string Generate(byte length) 
         {
             string password = "";
             int startingChar = 33, endingChar = 122; // ASCII set ! to z
@@ -22,7 +22,7 @@ namespace PassGen
             }
 
             //Generate Password - append n* random symbols in the character set
-            for (int i = 0; i < length; i++)
+            for (byte i = 0; i < length; i++)
             {
                 password += charSet.ElementAt(random.Next(0, charSet.Count));
             }
