@@ -1,3 +1,3 @@
 ﻿using PassGen;
 
-Console.WriteLine(Generator.Generate(1000));
+Console.WriteLine(Generator.Generate(length: 20));
